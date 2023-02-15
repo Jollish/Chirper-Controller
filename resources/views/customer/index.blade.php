@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body class="text-align">
-    @foreach ($customers as $customer)
-    {{$customer->firstName}}
-    @endforeach
+<body>
+    <div class="flex flex-wrap" style="background: #000; color: aliceblue">
+        <ul>
+            @foreach ($customers as $customer)
+            <br>
+            {{$customer->firstName}}
+            @endforeach
+        </ul>
+    </div>
 </body>
 </html>
